@@ -1,0 +1,1 @@
+document.write("VEMBINDO AO MEU MUNDO AMUAUHSAD")
