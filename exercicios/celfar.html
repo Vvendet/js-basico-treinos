@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #imagem{
+            text-align: center;
+        }
+    </style>
 </head>
 
 
 
 <body id="body">
+    <div id="imagem">
     <img src="https://th.bing.com/th/id/Re5e11297e3186129dd1a420ef7c75fe1?rik=25gjllErGTda4w&pid=ImgRaw" width="500px" height="200px">
-    <div class="container">
+</div><div class="container">
         <h2>CONVERSOR</h2>
         <form action="javascript: reverse()">
-          <div class="form-group" id="celcius">
+          <div class="form-group" >
             <label for="email">Temperatura em Celcius:</label>
             <input type="text" class="form-control" id="email" placeholder="Temperatura em Celcius" name="email" value="">
           </div>
-          <div class="form-group" id="farenheit">
+          <button type="submit" class="btn btn-default">Converter</button></form><hr><br><form action="javascript: reverseTwo()">
+          <div class="form-group">
             <label for="pwd">Temperatura Em Farenheit:</label>
             <input type="text" class="form-control" id="pwd" placeholder="Temperatura em Farenheit" name="pwd" value="">
           </div>
@@ -34,14 +41,25 @@
 
 
 	<script type="text/javascript">
-    functx  ion reverse(){
+    function   reverse(){
         var temperatura = document.querySelector(".form-control").value;
         console.log(temperatura)
-        convertendo = parseFloat(temperatura)*9 + 160;
+        var convertendo = parseFloat(temperatura)*9 + 160;
         convertendo = convertendo/5;
         var div = document.getElementById("pwd");
         div.value = convertendo;
         console.log(convertendo)
+
+        
+    }
+    function reverseTwo(){
+        var temperaturaF = document.getElementById("pwd").value;
+        console.log(temperaturaF)
+        var convert = parseFloat(temperaturaF)-32;
+        convert = convert*5/9;
+        var div2 = document.getElementById("email");
+        div2.value = convert;
+        console.log(convert)
     }
 
 	</script>
