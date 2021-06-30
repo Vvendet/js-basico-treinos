@@ -3,8 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>EXERCICIOS</title>
+    <style>
+        #body{
+            text-align: center;
+        }
+        #exe{
+            text-align: center;
+        }
+        button {
+  color: white;
+  background: blue;
+  transition: background 1s;
+}
+
+button:hover,
+button:focus {
+  background: red;
+}
+    </style>
 </head>
-<body>
+<body id="body">
     <span>
     <img src="https://th.bing.com/th/id/OIP.urY7oVtlwVMjTHSpJ2JaWgHaKP?pid=ImgDet&rs=1" width="100px" height="100px">
     
@@ -13,12 +31,21 @@
     <form action="javascript: enviar();">
         Nome: <input type="text" class="js-input-name" name="name" placeholder="Escolha o arquivo">
         
-        <input type="submit" value="Enviar">
-    </form>
+        <!--<input type="submit" value="Enviar">-->
+        <button>
+            Escolher
+        </button>
+          
+          
+          
+    </form><hr><em>o formulário está em beta</em><br><br>
     <p>Escolha, dos arquivos abaixos, qual você quer usar:
         <ul>
             <li>
-                fizzbuzz
+                <a href="fizzbuzz.html"> fizzbuzz</a>
+            </li>
+            <li>
+                <a href="reverse.html">Reverse String</a>
             </li>
         </ul>
     </p>
