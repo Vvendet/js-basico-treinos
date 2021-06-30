@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Reverse String</title>
+	<style type="text/css">
+		#body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body id="body">
+	<img src="https://th.bing.com/th/id/R97751d17805716c33e23778bbe0575d2?rik=AoS2FvrNfwYKoQ&pid=ImgRaw" width="400px" height="400px">
+	<form action="javascript: reverse();">
+        String: <input type="text" class="js-input-name" name="name" placeholder="Digite uma string">
+        
+        <input type="submit" value="Enviar">
+    </form>
+    <div id="resposta">resposta
+    <script>
+        function reverse(){
+            var text = document.querySelector(".js-input-name").value;
+            var div = document.getElementById("resposta"); 
+           
+            var resp = []
+            for (var cont = (text.length -1); cont >= 0; cont--){
+                resp.push(text[cont]);
+            }
+            console.log('' + resp);
+            div.innerHTML = resp.join(''); 
+            
+        }
+    </script></div>
+</body>
+</html>
