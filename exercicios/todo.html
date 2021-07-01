@@ -6,15 +6,35 @@
 	<style>
 		#body{
 			text-align: center;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+		
 		}
+		#thing{
+			position: relative;
+			left: 41%;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			list-style: none;
+		}
+		input[type="text"] {
+    	width: 200px;
+		}
+		textarea {
+			width: 1100px;
+		}
+		.js-input-name {width: 100px; height: 30px}
+		.bottonAdd{width: 35px; height: 35px;}
 	</style>
 </head>
-<body id="body">
-	<img src="https://media.istockphoto.com/photos/to-do-list-picture-id504647866?k=6&m=504647866&s=612x612&w=0&h=H0IvNmVPX_Aum4pdJzeOpkIdWN15jiLaaxxiwxXOyPs=" height="200px">
+<body >
+	<div id="body">
+		<img src="https://th.bing.com/th/id/R71f00a517e96909c48afc9f9eaec246c?rik=DZwJf8yHA5Qb6w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_532951.png&ehk=BbGkGa5HPx%2f83rKpYm5Feb49tC5rNOTWS709pl%2bkRe8%3d&risl=&pid=ImgRaw" height="200px">
+        <h1>To-do List 🧱</h1>
 	<form action="javascript: todolist()">
-		<input type="text" class="js-input-name" name="name" placeholder="To do 🤔👌">
-        <input type="submit" value="+">
-	</form>
+		<input type="text" class="js-input-name" name="name" id="coisa"  size="30" >
+        <input type="submit" class="bottonAdd" value="+">
+	</form></div>
 	<div id="thing">
 		<form action="javascript: removelist()">
 		<ul>
@@ -25,17 +45,22 @@
 	<script>
 		function todolist(){
 			var todo = document.querySelector(".js-input-name").value
+			var valor = document.getElementById("coisa")
+			if (todo == null || todo == ''){
+				return
+			}
 			console.log("dado obtido: "+todo)
 			var div = document.getElementById("thing")
 			var div_monitoring = []
 			div.innerHTML += "<li><input type='checkbox'>"+todo+" </li>"
 			div_monitoring.push("<li><input type='checkbox'>"+todo+" </li>")
 			console.log(div_monitoring)
+			valor.value = null
 		}
 		function removelist(){
 			var remove = document.querySelector(".js-input-remove").value
 			console.log(remove + "removido")
-		}
+		}	
 	</script>
 </body>
 </html>
