@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>To do List</title>
+	<style>
+		#body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body id="body">
+	<img src="https://media.istockphoto.com/photos/to-do-list-picture-id504647866?k=6&m=504647866&s=612x612&w=0&h=H0IvNmVPX_Aum4pdJzeOpkIdWN15jiLaaxxiwxXOyPs=" height="200px">
+	<form action="javascript: todolist()">
+		<input type="text" class="js-input-name" name="name" placeholder="To do 🤔👌">
+        <input type="submit" value="+">
+	</form>
+	<div id="thing">
+		<form action="javascript: removelist()">
+		<ul>
+
+		</ul>
+		</form>
+	</div>
+	<script>
+		function todolist(){
+			var todo = document.querySelector(".js-input-name").value
+			console.log("dado obtido: "+todo)
+			var div = document.getElementById("thing")
+			var div_monitoring = []
+			div.innerHTML += "<li><input type='checkbox'>"+todo+" </li>"
+			div_monitoring.push("<li><input type='checkbox'>"+todo+" </li>")
+			console.log(div_monitoring)
+		}
+		function removelist(){
+			var remove = document.querySelector(".js-input-remove").value
+			console.log(remove + "removido")
+		}
+	</script>
+</body>
+</html>

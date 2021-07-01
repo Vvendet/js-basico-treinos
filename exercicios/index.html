@@ -28,30 +28,40 @@ button:focus {
     
     <p><h1>EXERCICIOS FEITOS NAS AULAS DE JS</h1></p>
 </span>
-    <form action="javascript: enviar();">
-        Nome: <input type="text" class="js-input-name" name="name" placeholder="Escolha o arquivo">
-        
-        <!--<input type="submit" value="Enviar">-->
-        <button>
-            Escolher
-        </button>
-          
-          
-          
-    </form><hr><em>o formulário está em beta</em><br><br>
-    <p>Escolha, dos arquivos abaixos, qual você quer usar:
+<form class="form-inline">
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref"><h3>Escolher atividade</h3></label>
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+      <option selected>Escolher...</option>
+      <option value="1">fizzbuzz</option>
+      <option value="2">Reverse String</option>
+      <option value="3">Celcius to Farenheit</option>
+      <option value="4"> To do List</option>
+    </select>
+  
+  
+    <button type="submit" class="btn btn-primary my-1">Enviar</button>
+  </form>
+  <hr><em>o formulário está em beta</em><br><br>
+    <p>Escolha, dos arquivos abaixos, qual você quer usar:<br>
+        <select class="custom-select">
+            <option selected>Abra este menu select</option>
+            <option value="1">                <a href="fizzbuzz.html"> </a></option>
+            <option value="2"> <a href="reverse.html"></a></option>
+            <option value="3"><a href="celfar.html"></a></option>
+            <option value="4"><a href="todo"></a></option>
+          </select>
         <ul>
             <li>
-                <a href="fizzbuzz.html"> fizzbuzz</a>
+
             </li>
             <li>
-                <a href="reverse.html">Reverse String</a>
+               
             </li>
             <li>
-                <a href="celfar.html">Celcius to Farenheit</a>
+                
             </li>
             <li>
-                <a href="todo">To do List</a>
+                
             </li>
         </ul>
     </p>
