@@ -17,6 +17,12 @@
 			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 			list-style: none;
 			text-size-adjust: 100px;
+			
+			
+			
+		}
+		.bottonRemove{
+
 		}
 		input[type="text"] {
     	width: 200px;
@@ -26,6 +32,7 @@
 		}
 		.js-input-name {width: 100px; height: 30px}
 		.bottonAdd{width: 35px; height: 35px;}
+		#btn{width: 35px; height: 35px; position: absolute; text-align: left; left: 56.43%;}
 		.check {
 	-webkit-appearance: none;
 	background-color: #fafafa;
@@ -53,16 +60,62 @@
 	left: 3px;
 	color: #99a1a7;
 }
+.itenss {
+  display: flex;
+  align-items:center;
+}
+
+input[type="checkbox"] {
+  font-weight: bold
+}
+ul.hold_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.hold_menu a, div.hold_trigger  {
+   display: inline-block;
+   padding: 5px 15px;
+   border: 1px solid #ccc;
+   width: 300px;
+}
+
+ul.hold_menu a:link, ul.hold_menu a:visited {
+   color: black;
+   text-decoration: none;
+}
+
+ul.hold_menu a:active, ul.hold_menu a:hover {
+   background: #ff0;
+   text-decoration: none;
+}
+
+div.hold_trigger {
+   color: black;
+   cursor: pointer;
+}
+
+div.hold_trigger:hover {
+   background: #ccc;
+}
+#texto-explicativo{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 	</style>
 </head>
 <body >
+	
 	<div id="body">
 		<img src="https://th.bing.com/th/id/R71f00a517e96909c48afc9f9eaec246c?rik=DZwJf8yHA5Qb6w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_532951.png&ehk=BbGkGa5HPx%2f83rKpYm5Feb49tC5rNOTWS709pl%2bkRe8%3d&risl=&pid=ImgRaw" height="200px">
         <h1>To-do List 🧱</h1>
 	<form action="javascript: todolist()">
 		<input type="text" class="js-input-name" name="name" id="coisa"  size="30" >
-        <input type="submit" class="bottonAdd" value="+">
-	</form></div>
+        <input type="submit" class="bottonAdd" value="+"></form>	</div>
+	<div id="texto-explicativo">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		
 	<div id="thing">
 		<form action="javascript: removelist()">
 		<ul>
@@ -70,25 +123,40 @@
 		</ul>
 		</form>
 	</div>
+	
 	<script>
+
+		var lista = []
+		
 		function todolist(){
 			var todo = document.querySelector(".js-input-name").value
 			var valor = document.getElementById("coisa")
 			if (todo == null || todo == ''){
 				return
 			}
+			
 			console.log("dado obtido: "+todo)
 			var div = document.getElementById("thing")
 			var div_monitoring = []
-			div.innerHTML += "<li><input type='checkbox' class='check'>"+todo+" </li>"
-			div_monitoring.push("<li><input type='checkbox' class='check'>"+todo+" </li>")
-			console.log(div_monitoring)
+			let id_temp = Math.floor(Math.random() * 101)
+			let id_temp2 = id_temp +1
+			div.innerHTML += "<div class='hold_menu' id="+id_temp+"><li><input type='checkbox' class='check' ><button id="+id_temp2+" >"+todo+"</button></li></div>"
+			lista.push({
+				id: id_temp,
+				segundo_id: id_temp2})
 			valor.value = null
+			todo = null
 		}
-		function removelist(){
-			var remove = document.querySelector(".js-input-remove").value
-			console.log(remove + "removido")
-		}	
+
+		//var rmv = document.getElementById(lista[0][0]).addEventListener("click", function(){ alert("Hello World!"); })
+		var bns = document.getElementById(lista[0][0])
+
+		bns.addEventListener("click", function(){
+			bns.event.target.id.remove()
+		})
+	
+		
 	</script>
+
 </body>
 </html>
