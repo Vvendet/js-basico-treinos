@@ -8,7 +8,7 @@ const criarItem = (nome,check=' ',indice) => {
     item.innerHTML = `
     <input type="checkbox" ${check} data-indice=${indice}>
     <div>${nome}</div>
-    <input type="button" value="X" data-indice=${indice}>`
+    <button data-indice=${indice}><img src="https://image.freepik.com/icones-gratis/lixo_318-10194.jpg" width="20px" height="20px" data-img="apagar"></button>`
     document.getElementsByClassName("todo__list")[0].appendChild(item)
 }
 const removerItem = (indice) => {
@@ -40,7 +40,8 @@ const inserirItem = (evento) => {
 
 const clickItem = (evento) => {
     const elemento = evento.target
-    if (elemento.type === 'button'){
+    console.log(elemento)
+    if (elemento.dataset.img === 'apagar'){
         const indice = elemento.dataset.indice
         removerItem(indice)
     } 
