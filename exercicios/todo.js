@@ -1,5 +1,5 @@
 const listContainer = document.querySelector("[data-list]")
-const newListForm = document.querySelector("[data-new-list-form]")
+const newListForm = document.querySelectorAll("[data-new-list-form]")
 const newListInput = document.querySelector("[data-new-list-input]")
 
 let lists = []
