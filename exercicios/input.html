@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Input</title>
+    <style>
+       .formulario{
+           text-align: center;
+       }
+    </style>
+</head>
+<body id="corpor">
+    <div class="corpo">
+        <h1>Atividade Descrição</h1>
+        <p>1) Crie um campo <input type="text"> e aplique os seguintes controles com base nos 
+eventos abaixo:</p>
+            <ul>
+                <li> No evento de foco modifique o background do input para amarelo.</li>
+                <li>Quando o campo perder o foco, recupere o seu respectivo valor e:</li>
+                <ul>
+                    <li> o conteúdo contido no campo tenha menos de 3 caracteres o mesmo 
+                    deve ter seu background alterado para vermelho</li>
+                    <li> Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background 
+                        deve ser alterado para verde</li>
+                </ul>
+            </ul>
+
+    </div><br><br>
+    <div class="formulario">
+        
+        <form class="formulario" >
+            <input onblur="teste()" id="entrada" type="text"><br>
+            <button>+</button>
+        </form>
+    </div>
+    <div id="estilo">
+        
+    </div>
+
+    <script src="input.js"> </script>
+</body>
+</html>
