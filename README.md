@@ -3,7 +3,7 @@ Segue neste repositório aplicações desenvolvidas durante treinamentos e estud
 
 ## Destaque nas aplicações:
 
-<img src="https://th.bing.com/th/id/OIP.7_2d-xnIrMyJ9U_7UStLqAHaIx?pid=ImgDet&rs=1" width="100px" height="50px">
+<img src="https://th.bing.com/th/id/OIP.7_2d-xnIrMyJ9U_7UStLqAHaIx?pid=ImgDet&rs=1" width="500px" height="500px">
 ### To-do List:
   Faça uma lista de afazeres para seguir uma rotina organizada: [clique aqui](https://vvendet.github.io/js-basico-treinos/To-doList/)
  
