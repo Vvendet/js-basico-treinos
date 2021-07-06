@@ -1,4 +1,4 @@
-<img src="https://www.bing.com/th?id=OIP.fxMFAWgcs9ASnyZoIMeLJAHaHa&w=145&h=160&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="200px" height="200px" />
+<img src="https://www.bing.com/th?id=OIP.fxMFAWgcs9ASnyZoIMeLJAHaHa&w=145&h=160&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" width="100px" height="100px" />
 
 # js-basico-treinos
 Segue neste repositório aplicações desenvolvidas durante treinamentos e estudos para JavaScript. Desde aulas até os exercícios que fiz para treinar, seguindo orientações dos professores.
