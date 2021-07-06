@@ -18,6 +18,8 @@ Segue neste repositório aplicações desenvolvidas durante treinamentos e estud
 
 
 <img src="https://th.bing.com/th/id/OIP.JzFl1pRJQpzx9Ik_Q-pwdgHaG5?pid=ImgDet&rs=1" width="300px" height="300px" />
+
+
 ### Mata-Mosquito:
   Treine sua mira com o mouse em um joguinho simples: [Mata-Mosquito](https://vvendet.github.io/js-basico-treinos/mata-mosquito/)
   
