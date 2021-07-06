@@ -3,7 +3,7 @@ Segue neste repositório aplicações desenvolvidas durante treinamentos e estud
 
 ## Destaque nas aplicações:
 
-<img src="https://th.bing.com/th/id/OIP.7_2d-xnIrMyJ9U_7UStLqAHaIx?pid=ImgDet&rs=1" width="500px" height="500px" />
+<img src="https://th.bing.com/th/id/OIP.7_2d-xnIrMyJ9U_7UStLqAHaIx?pid=ImgDet&rs=1" width="400px" height="400px" />
 
 
 ### To-do List:
@@ -11,13 +11,13 @@ Segue neste repositório aplicações desenvolvidas durante treinamentos e estud
  
  
  
-<img src="https://th.bing.com/th/id/R.7ac16396d7bde6f78584663721e0890f?rik=Lt0M2urxNPbIuQ&pid=ImgRaw" width="400px" height="400px" />
+<img src="https://th.bing.com/th/id/R.7ac16396d7bde6f78584663721e0890f?rik=Lt0M2urxNPbIuQ&pid=ImgRaw" width="300px" height="300px" />
 
 ### Calculadora:
   Realize cálculos básicos com uma calculadora muito fofa: [calculadora](https://vvendet.github.io/js-basico-treinos/calculadora/index.html)
 
 
-<img src="https://th.bing.com/th/id/R.dc273775179fae7fde17c929c29d58e6?rik=2WAy7cx2srpNfA&pid=ImgRaw" width="400px" height="400px" />
+<img src="https://th.bing.com/th/id/OIP.JzFl1pRJQpzx9Ik_Q-pwdgHaG5?pid=ImgDet&rs=1" width="300px" height="300px" />
 ### Mata-Mosquito:
   Treine sua mira com o mouse em um joguinho simples: [Mata-Mosquito](https://vvendet.github.io/js-basico-treinos/mata-mosquito/)
   
